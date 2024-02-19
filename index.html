@@ -6,15 +6,76 @@
     <!-- meta information: title,import external CSS.files,import JavaScript(scripts) Libraries() -->
     <meta charset="utf-8">
     <title>My first page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </head>
+<style>
+    /* div{
+    background-color: lightgray;
+}
+
+div p {
+    color: antiquewhite;
+
+}
+
+span h1{
+    color: violet;
+
+}
+
+div ul li{
+    background-color: antiquewhite;
+    color: rgb(125, 84, 163);
+}
+
+div ol{
+    background-color: cadetblue
+}
+header{
+    color: rgb(25, 146, 146);
+} */
+
+    /* div table{
+    background-color: antiquewhite;
+    color: darkslategrey;
+}
+.divheader p {
+    background-color: lightgray;
+    text-decoration: underline;
+}
+
+#span h2 {
+    background-color:rgb(211, 211, 211);
+    color: rgb(109, 64, 160);
+}
+.text{
+    background-color: antiquewhite;
+}
+#parag {
+    color: black;
+    text-decoration:overline underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+</style>
+
+
 
 <body>
-    <div>
+    <div class="divheader">
         <p>Header section with div</p>
     </div>
-    <header>
-        My header sectium
+    <header class="header">
+        My header section
     </header>
+    <div>
+        This
+    </div>
     <!-- the content of the page -->
 
     <!-- sectiunea de body poate fii inpartita la randul ei in alte sectiuni: navbar/header, restul continutului din pagina,footer  -->
@@ -24,11 +85,13 @@
     <!-- HTML HEADINGS -->
     <h1 style="color:blueviolet;text-align: center;">Welcome to HTML,CSS,JS course</h1>
     <hr>
-    <span></span>
-    <h2>Tis is an <br> h2 heading</h2> </span>
+    <p style="color: crimson;font-weight:bolder;">This is CSS!</p>
+    <span id="span">
+        <h2>Tis is an <br> h2 heading</h2>
+    </span>
     <!-- HTML paragraphs -->
-    <div>
-        <p>This is my first paragraph</p>
+    <div class="text">
+        <p class="paragraph" id="parag" style="color: aquamarine;"> This is my first paragraph</p>
 
         <p><strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. Repellat laborum dolorum sunt
             tempore, iure, tenetur
@@ -49,9 +112,9 @@
         </p>
     </div>
     <!-- HTML images -->
-    <div>
-    <img src="/img\maxresdefault.jpg" alt="pisica salbatica" width="320" height="170">
-    <img src="/img/pisici 2.jpeg" alt="doua pisici stau" width="450" height="420">
+    <div id="images">
+        <img img="img" src="/img\maxresdefault.jpg" alt="pisica salbatica" width="320" height="170">
+        <img img="img" src="/img/pisici 2.jpeg" alt="doua pisici stau" width="450" height="420">
     </div>
     <!--C:\Frontend64 = calea absolta (lunga) -->
     <!-- img'\maxresdefault.jpg = calea relativa (scurta) -->
@@ -71,109 +134,109 @@
     <!-- HTML lists -->
     <!-- HTML unordered list -->
     <!-- ul>li*4 (o lista neordonata care contine 4 elemente in ea) -->
-    <div>
-    <h4>Tier games list</h4>
-    <ul>
-        <li>Pubg</li>
-        <li>League Of Legends</li>
-        <li>Counter Strike: Global Offensive</li>
-        <li>Among:US</li>
-    </ul>
+    <div class="list class">
+        <h4>Tier games list</h4>
+        <ul>
+            <li>Pubg</li>
+            <li>League Of Legends</li>
+            <li>Counter Strike: Global Offensive</li>
+            <li>Among:US</li>
+        </ul>
 
 
 
-    <!-- HTML ordered list -->
-    <h4 style="color: lightseagreen;">Tier car list</h4>
-    <ol>
-        <li>Mercedes</li>
-        <li>Bmw</li>
-        <li>Audi</li>
-        <li>Skoda</li>
-    </ol>
+        <!-- HTML ordered list -->
+        <h4 style="color: lightseagreen;">Tier car list</h4>
+        <ol>
+            <li>Mercedes</li>
+            <li>Bmw</li>
+            <li>Audi</li>
+            <li>Skoda</li>
+        </ol>
     </div>
     <!-- HTML table -->
     <!-- table>thead>tr>td*4 -->
-    <div>
-    <table>
-        <!-- define table header -->
-        <thead>
-            <tr>
-                <td>FirstName</td>
-                <td>LastName</td>
-                <td>Age</td>
-                <td>Job</td>
-            </tr>
-        </thead>
-        <!-- define table body -->
-        <tbody>
-            <tr>
-                <td>Badea</td>
-                <td>Andrei</td>
-                <td>25</td>
-                <td>Profesor</td>
-            </tr>
-            <tr>
-                <td>Baranca</td>
-                <td>Teodora</td>
-                <td>19</td>
-                <td>Studenta</td>
-            </tr>
-            <tr>
-                <td>Ion</td>
-                <td>Luca</td>
-                <td>22</td>
-                <td>Manager</td>
-            </tr>
-            <tr>
-                <td>Popa</td>
-                <td>Elena</td>
-                <td>31</td>
-                <td>Software Engineer</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<span>
-    <pre>
+    <div class="register list">
+        <table>
+            <!-- define table header -->
+            <thead>
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Age</td>
+                    <td>Job</td>
+                </tr>
+            </thead>
+            <!-- define table body -->
+            <tbody>
+                <tr>
+                    <td>Badea</td>
+                    <td>Andrei</td>
+                    <td>25</td>
+                    <td>Profesor</td>
+                </tr>
+                <tr>
+                    <td>Baranca</td>
+                    <td>Teodora</td>
+                    <td>19</td>
+                    <td>Studenta</td>
+                </tr>
+                <tr>
+                    <td>Ion</td>
+                    <td>Luca</td>
+                    <td>22</td>
+                    <td>Manager</td>
+                </tr>
+                <tr>
+                    <td>Popa</td>
+                    <td>Elena</td>
+                    <td>31</td>
+                    <td>Software Engineer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <span>
+        <pre>
         My brain work now!
         I don't know what happen.
         Help me GOD!
     </pre>
-</span>
+    </span>
 
     <!-- HTML Forms -->
-    <div>
-    <form>
-        <label>
-            First name:
-        </label>
-        <input type="text">
+    <div class="development list">
+        <form>
+            <label>
+                First name:
+            </label>
+            <input type="text">
 
-        <label>
-            Last name:
-        </label>
-        <input type="text">
+            <label>
+                Last name:
+            </label>
+            <input type="text">
 
-        <label>
-            Email:
-        </label>
-        <input type="text">
+            <label>
+                Email:
+            </label>
+            <input type="text">
 
-        <label>Phone:</label>
-        <input type="tel" pattern="[0-9]{10}" required>
-        <input type="submit" value="submit">
-        <!-- Form type: radio -->
-        <input type="radio" value="option">
-        <label for="Select an option">Select an option</label>
-        <input type="radio" value="option">
-        <label for="Select an option">Select an option</label>
-    </form>
-    <!-- HTML form textarea -->
-    <form>
-        <label for="Details">Details</label>
-        <textarea name="details" id="details" cols="50" rows="2" maxlength="100"></textarea>
-        <input type="submit" value="Submit">
-    </form>
+            <label>Phone:</label>
+            <input type="tel" pattern="[0-9]{10}" required>
+            <input class="btn btn-success" type="submit" value="submit">
+            <!-- Form type: radio -->
+            <input type="search" value="search">
+            <label for="Select an option">Select an search</label>
+            <input type="time" value="time">
+            <label for="Select an option">Select an time</label>
+        </form>
+        <!-- HTML form textarea -->
+        <form>
+            <label for="Details">Details</label>
+            <textarea name="details" id="details" cols="50" rows="2" maxlength="100"></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <!-- HTML dropdown-list -->
@@ -193,10 +256,10 @@
     </div>
 
     <footer>
-        My footer 
+        My footer
 
     </footer>
-    
+
 
 
 </body>

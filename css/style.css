@@ -1,0 +1,53 @@
+div{
+    background-color: lightgray;
+}
+
+div p {
+    color: rgb(129, 90, 37);
+
+}
+
+span h1{
+    color: violet;
+
+}
+
+div ul li{
+    background-color: antiquewhite;
+    color: rgb(125, 84, 163);
+}
+
+div ol{
+    background-color: cadetblue
+}
+header{
+    color: rgb(25, 146, 146);
+}
+
+/* atribute class slection  */
+
+.divheader p {
+    background-color: lightgray;
+    text-decoration: underline;
+}
+
+#span h2 {
+    background-color:rgb(211, 211, 211);
+    color: rgb(109, 64, 160);
+}
+.text{
+    background-color: antiquewhite;
+    border: 3px solid red
+}
+#parag {
+    color: black;
+    text-decoration:overline underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#images {
+    margin: 50px;
+    background-color: rgb(255, 232, 227)
+}
+#img{
+    padding: 10px;
+}
